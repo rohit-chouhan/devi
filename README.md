@@ -90,3 +90,28 @@ For clearing all disk variable here we use clean method.
 ```dart
 devi.clean();
 ```
+
+## Snackbar and Alert
+Snackbar and alert is use to create a pop information in application.
+
+### SnackBar or Toast
+for creating snackbar on application here we have method toast()
+```dart
+devi.toast(context,
+  title: "Hello, I am SnackBar",
+  buttonLabel: "Ok", 
+  onPressed: () {
+    print("SnackBar Clicked!");
+});
+ ```
+ for applying theme on snackbar we use theme properties
+ ```dart
+  devi.toast(context,
+    theme: Colors.red, //background color
+    buttonTheme: Colors.white, //button color
+    title: "Hello, I am SnackBar",
+    buttonLabel: "Ok",
+    onPressed: () {
+      print("SnackBar Clicked!"); 
+  });
+  ```
