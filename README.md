@@ -106,12 +106,22 @@ devi.toast(context,
  ```
  for applying theme on snackbar we use theme properties
  ```dart
-  devi.toast(context,
-    theme: Colors.red, //background color
-    buttonTheme: Colors.white, //button color
-    title: "Hello, I am SnackBar",
-    buttonLabel: "Ok",
+devi.toast(context,
+  theme: Colors.red, //background color
+  buttonTheme: Colors.white, //button color
+  title: "Hello, I am SnackBar",
+  buttonLabel: "Ok",
     onPressed: () {
       print("SnackBar Clicked!"); 
-  });
+});
+  ```
+  ### Dialogbox or Alert
+  To show pop up dialogbox here we use alert() method
+  ```dart
+devi.alert(context,
+  title: "Heading",
+  description: "This is Alert Box",
+  actions: [
+    TextButton(onPressed: () => Navigator.of(context).pop(), child: Text("Ok"))
+]);
   ```
