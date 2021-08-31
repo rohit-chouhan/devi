@@ -28,3 +28,35 @@ For going back from current screen to previous screen, here we use back() method
 devi.back(); 
 ```
 It will route to you previous screen.
+
+## Disk Storage
+Disk storage is use to create disk variable as cache in your application. which is permanently created in system till formating device. Its very light to use and based on JSON.
+
+### Write a storage
+To write or creating new storage variable here we use method put
+```dart
+Devi devi = new Devi('box1'); //box1 is parent storage name
+
+devi.put('name','Rohit');
+```
+It will write Rohit as key `name` in `box1`, and store to the disk.
+
+### Read a storage
+For reading a existing disk storage we use get method
+```dart
+devi.get('name');
+```
+It will return value of key `name`.
+
+### Checking a storage
+For checking is variable is available or not in disk.
+```dart
+devi.isHas('name'); //will return true or false
+```
+Another example
+```dart
+if(devi.isHas('name') == true){
+  print('Yes, key is found');
+} else {
+  print('No, key not found');
+}
