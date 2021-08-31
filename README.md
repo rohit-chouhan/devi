@@ -125,3 +125,11 @@ devi.alert(context,
     TextButton(onPressed: () => Navigator.of(context).pop(), child: Text("Ok"))
 ]);
   ```
+  
+## Copy to clipboard
+When you want to copy and text in clipboard here we use copy() method
+```dart
+String text = "Hello, I am devi!";
+devi.copy(text);
+```
+It will copy text to your system clipboard.
