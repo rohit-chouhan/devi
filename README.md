@@ -33,7 +33,7 @@ It will route to you previous screen.
 Disk storage is use to create disk variable as cache in your application. which is permanently created in system till formating device. Its very light to use and based on JSON.
 
 ### Write a storage
-To write or creating new storage variable here we use method put
+To write or creating new storage variable here we use method put()
 ```dart
 Devi devi = new Devi('box1'); //box1 is parent storage name
 
@@ -42,7 +42,7 @@ devi.put('name','Rohit');
 It will write Rohit as key `name` in `box1`, and store to the disk.
 
 ### Read a storage
-For reading a existing disk storage we use get method
+For reading a existing disk storage we use get() method
 ```dart
 devi.get('name');
 ```
@@ -60,3 +60,33 @@ if(devi.isHas('name') == true){
 } else {
   print('No, key not found');
 }
+```
+### Remove a storage
+For clear specific key from storage we use remove() method
+```dart
+devi.remove('name');
+```
+It will remove name key from storage.
+
+### Get all storage as JSON
+For getting all stored value from box, here we use getJson() method
+```dart
+Devi devi = new Devi('box1');
+devi.put('name','Rohit');
+devi.put('county','India');
+
+devi.getJson();
+```
+will return
+```json
+{
+  "name":"Rohit",
+  "country":"India"
+}
+```
+
+### Clear all varibale 
+For clearing all disk variable here we use clean method.
+```dart
+devi.clean();
+```
