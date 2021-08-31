@@ -133,3 +133,28 @@ String text = "Hello, I am devi!";
 devi.copy(text);
 ```
 It will copy text to your system clipboard.
+
+## Validator
+There is some string validator to validate email, strong password etc.
+```dart
+String email = "abc@gmail.com";
+if(devi.isEmail(email) == true){
+  print("Email is valid");
+} else {
+  print("Email is not valid");
+}
+
+String password = "Qwerty@123";
+if(devi.isPassword(password) == true){
+  print("Password is strong");
+} else {
+  print("Password is weak");
+}
+
+
+String website = "http://google.com";
+if(devi.isUrl(website) == true){
+  print("URL is strong");
+} else {
+  print("URL is weak");
+}
