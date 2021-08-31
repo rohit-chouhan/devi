@@ -2,6 +2,23 @@
 <p align="center">A flutter framework for storage, navigator, validate manager, we made flutter easy and fast.</p>
 <p align="center"><img src="https://github.com/rohit-chouhan/devi/blob/main/devi.png?raw=true"/></p>
 
+## Table of content
+- [About Devi](#about-devi)
+- [Object creating](#object-creating)
+- [Route Management](#route-management)
+- [Disk Storage](#disk-storage)
+  * [Write a storage](#write-a-storage)
+  * [Read a storage](#read-a-storage)
+  * [Checking a storage](#checking-a-storage)
+  * [Remove a storage](#remove-a-storage)
+  * [Get all storage as JSON](#get-all-storage-as-json)
+  * [Clear all varibale](#clear-all-varibale)
+- [Snackbar and Alert](#snackbar-and-alert)
+  * [SnackBar or Toast](#snackbar-or-toast)
+  * [Dialogbox or Alert](#dialogbox-or-alert)
+- [Copy to clipboard](#copy-to-clipboard)
+- [Validator](#validator)
+
 ## About Devi
 
 Devi is a fast and light framework for flutter to make work easy, its make management fast. Devi has very easy code and clean code to understand for beginner and all. Its allow to management for route, disk storage, alerts and validation.
