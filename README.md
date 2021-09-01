@@ -148,8 +148,10 @@ When you want to copy and text in clipboard here we use copy() method
 ```dart
 String text = "Hello, I am devi!";
 devi.copy(text);
+devi.paste(); // will return copied txt
 ```
 It will copy text to your system clipboard.
+
 
 ## Validator
 There is some string validator to validate email, strong password etc.
