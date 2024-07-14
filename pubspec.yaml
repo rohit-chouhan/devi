@@ -1,7 +1,7 @@
 name: devi
 description: Devi is a fast and light framework for flutter to make work easy, Its allow to management for route, disk storage, alerts and validation.
-version: 1.0.4
-homepage: rohitchouhan.com
+version: 1.0.0
+homepage: https://rohitchouhan.com
 repository: https://github.com/rohit-chouhan/devi
 
 environment:
