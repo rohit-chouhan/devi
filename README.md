@@ -2,6 +2,9 @@
 <p align="center">A flutter framework for storage, navigator, validate manager, we made flutter easy and fast.</p>
 <p align="center"><img src="https://github.com/rohit-chouhan/devi/blob/main/devi.png?raw=true"/></p>
 
+[![GitHub](https://img.shields.io/badge/Rohit_Chouhan-GitHub-black?logo=github)](https://www.github.com/rohit-chouhan)
+_[![Sponsor](https://img.shields.io/badge/Sponsor-Become_A_Sponsor-blue?logo=githubsponsors)](https://github.com/sponsors/rohit-chouhan)_
+
 ## Table of content
 - [About Devi](#about-devi)
 - [Object creating](#object-creating)
@@ -177,3 +180,14 @@ if(devi.isUrl(website) == true){
 } else {
   print("URL is weak");
 }
+```
+
+## Example
+
+👉 For a complete example, refer to the [Devi package documentation](https://pub.dev/packages/devi/example).
+
+## Report bugs or issues
+
+You are welcome to open a _[ticket](https://github.com/rohit-chouhan/devi/issues)_ on github if any 🐞 problems arise. New ideas are always welcome.
+
+> Copyright © 2024 **[Rohit Chouhan](https://rohitchouhan.com)**. Licensed under the _[MIT LICENSE](https://github.com/rohit-chouhan/devi/blob/main/LICENSE)_
