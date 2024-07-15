@@ -16,7 +16,7 @@ jobs:
       - name: Check Publish Warnings
         run: dart pub publish --dry-run
       - name: Publish to Pub.dev
-        run: dart pub publish
+        run: dart pub publish --force
       - name: Publish
         uses: k-paxian/dart-package-publisher@v1.5.1
         with:
