@@ -2,7 +2,7 @@ name: Publish Flutter Package
 
 on:
   release:
-    types: [released]
+    types: [published]
 
 jobs:
   publish:
@@ -20,11 +20,10 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
 
-    - name: Decode credentials
-      id: decode_credentials
-      run: echo "${{ secrets.CREDENTIAL_JSON }}" | base64 --decode > $HOME/.pub-cache/credentials.json
-
     - name: Publish to pub.dev
-      run: flutter pub publish --force
       env:
         PUB_CREDENTIALS: ${{ secrets.CREDENTIAL_JSON }}
+      run: |
+        mkdir -p $HOME/.config/dart
+        echo '{"accessToken":"'$PUB_CREDENTIALS'"}' > $HOME/.config/dart/pub-credentials.json
+        flutter pub publish --force
