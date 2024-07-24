@@ -1,8 +1,8 @@
-## 1.0.4
+## 1.0.0
 
-* bug fixed
-* more validation added
+- bug fixed
+- code refactored
 
 ## 1.0.0-beta
 
-* initial release.
+- initial release.
